@@ -1,0 +1,50 @@
+{
+    "type": "entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:yellow_dye",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:custom_model_data": 1
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "bold": true,
+                    "color": "gold",
+                    "italic": false,
+                    "obfuscated": false,
+                    "strikethrough": false,
+                    "text": "Kel Coin",
+                    "underlined": false
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:score",
+                  "target": "this",
+                  "score": "withdraw"
+                },
+                "add": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
